@@ -1,0 +1,16 @@
+.flatingdiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    box-shadow: var(--boxShadow);
+    border-radius: 17px;
+    padding: 0px 28px 0px 0px;
+    height: 4.5rem;
+}
+.flatingdiv>img{
+    transform: scale(0.5);
+}
+.flatingdiv>span{
+    font-size: 16px;
+}

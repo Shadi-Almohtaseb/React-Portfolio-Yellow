@@ -1,0 +1,57 @@
+:root
+{
+  --yellow: #F5C32C;
+    --orange : #FCA61F;
+    --black : #242D49;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgba(0, 0, 0, 0.096);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+.App{
+    padding: 0.5rem 3.5rem;
+    overflow: hidden;
+    color: var(--black);    
+}
+
+::-webkit-scrollbar{
+  width: 7px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #F5C32C;
+}
+::-webkit-scrollbar-track{
+  background-color: #242D49;
+}
+
+
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+}
+.button{
+    border-radius: 34px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 11px 24px 11px 24px;
+    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+    box-shadow: 0px 19px 19px 1px rgba(251, 161, 40, 0.42);
+    transition:all 0.5s ease-out;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.button:hover {
+  border: 1px solid var(--orange);
+  color: var(--orange);
+  background: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width:480px) {
+    .App{
+      padding: 0.5rem 1rem;
+    }
+}

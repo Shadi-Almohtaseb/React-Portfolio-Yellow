@@ -1,0 +1,37 @@
+.hamburguer {
+    width: 34px;
+    height: 27px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7px 0 6px 7px;
+    border-radius: 4px;
+    transition: all 1s ease;
+}
+.line{
+    width: 100%;
+    height: 3px;
+    background-color:  rgb(16, 30, 72);
+    transform-origin: left;
+    transition: all 1s ease;
+    border-radius: 20px;
+}
+.active{
+    background-color:rgb(16, 30, 72);
+    color: #fff ;
+    transition: all 1s ease;
+}
+.active .line1{
+    background-color: #fff;
+    transform: rotate(45deg);
+    transition: all 1s ease;
+}
+.active .line3{
+    background-color: #fff;
+    transform: rotate(-45deg);
+    transition: all 1s ease;
+}
+.active .line2{
+    opacity: 0;
+}

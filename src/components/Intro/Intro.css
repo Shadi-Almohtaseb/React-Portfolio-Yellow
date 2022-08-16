@@ -1,0 +1,166 @@
+.intro {
+    display: flex;
+    height: calc(100vh - 40vh);
+    margin-top: 10rem;
+}
+
+.i-left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+}
+
+.i-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.i-name>:nth-child(1) {
+    margin-top: 19px;
+    color: var(--black);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.i-name>:nth-child(2) {
+    margin-top: 25px;
+    color: var(--orange);
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.i-name>:nth-child(3) {
+    margin-top: 30px;
+    color: var(--black);
+    font-weight: 400;
+    font-size: 2.3rem;
+    height: 45px;
+}
+
+.im {
+    color: var(--black);
+}
+
+.typing {
+    color: var(--orange);
+}
+
+.i-button {
+    margin-top: 25px;
+    width: 8rem;
+    height: 2.4rem;
+    letter-spacing: 1px;
+}
+
+.i-icons {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.i-icons>* {
+    padding: 15px;
+    transform: scale(0.5);
+    border-bottom: 4px solid var(--orange);
+    border-radius: 15px;
+    transition: 0.7s ease;
+    box-shadow: 0px 20px 20px 7px rgba(251, 161, 40, 0.42);
+}
+
+.i-icons>*:hover {
+    cursor: pointer;
+    transform: scale(0.57);
+}
+
+
+
+.i-right {
+    flex: 1;
+    position: relative;
+}
+
+.i-right>* {
+    position: absolute;
+    margin-top: 22px;
+    z-index: 1;
+}
+
+.i-right>:nth-child(1) {
+    transform: scale(0.8);
+    left: -12%;
+}
+
+.i-right>:nth-child(2) {
+    transform: scale(0.67);
+    top: -4.4rem;
+    left: -3.4rem;
+}
+
+.i-right>:nth-child(3) {
+    transform: scale(1.4);
+    left: 28%;
+}
+
+.i-right>:nth-child(4) {
+    transform: scale(0.63);
+    top: -19%;
+    left: -20%;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.blur {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(72px);
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+}
+
+.ityped-cursor {
+    font-size: 1.9rem;
+    animation: blink 0.5s infinite;
+    color: var(--orange);
+    font-weight: 300;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .intro {
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+
+    .i-name {
+        text-align: center;
+    }
+    .i-icons{
+        gap: 0rem;
+        justify-content: center;
+    }
+    .i-button {
+        margin-left: 7rem;
+    }
+    .i-right{
+        transform: scale(0.8);
+        left: -3rem;
+        margin-top: 7rem;
+    }
+    .floatingDiv:nth-of-type(1){
+        top: -8.4rem !important;
+    }
+}
